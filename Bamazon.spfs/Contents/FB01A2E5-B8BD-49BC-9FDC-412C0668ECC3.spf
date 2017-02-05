@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>BamazonDB</string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>name</key>
+			<string>bamazon</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>latin1</string>
+			<key>contentFilter</key>
+			<dict/>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK0HCBUWFxgZHSQoLDA0VSRudWxs0wkK
+			CwwQFFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzow0OD4ACgAOA
+			BKMREhOABYAGgAiADFR0eXBlVHJvd3NUa2V5c18QJlNlbGVjdGlv
+			bkRldGFpbFR5cGVQcmltYXJ5S2V5ZWREZXRhaWxz0wkKCxobHKCg
+			gAfSHh8gIVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxl
+			RGljdGlvbmFyeaMgIiNcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00goL
+			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeACldpdGVtX2lk0h4fLS5f
+			EA9OU011dGFibGVTdHJpbmejLS8jWE5TU3RyaW5n0h4fMTJeTlNN
+			dXRhYmxlQXJyYXmjMTMjV05TQXJyYXnSHh8iNaIiI18QD05TS2V5
+			ZWRBcmNoaXZlctE4OVRkYXRhgAEACAARABoAIwAtADIANwBFAEsA
+			UgBaAGUAbABwAHIAdAB2AHoAfAB+AIAAggCHAIwAkQC6AMEAwgDD
+			AMUAygDVAN4A9AD4AQUBDgETARUBFwEZAR4BKAEqATIBNwFJAU0B
+			VgFbAWoBbgF2AXsBfgGQAZMBmAAAAAAAAAIBAAAAAAAAADoAAAAA
+			AAAAAAAAAAAAAAGa
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{1, 0}, {1239, 716}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>CREATE DATABASE BamazonDB;
+
+USE BamazonDB;
+
+-- I created the item id to be a varchar because the items would also have strings 
+CREATE TABLE IF NOT EXISTS products(
+item_id VARCHAR(100) NOT NULL PRIMARY KEY,
+product_name VARCHAR(100),
+department_name VARCHAR(100),
+price INTEGER(100) UNSIGNED NOT NULL,
+quantity INTEGER(100) UNSIGNED
+
+);
+
+
+</string>
+			<key>table</key>
+			<string>products</string>
+			<key>view</key>
+			<string>SP_VIEW_CONTENT</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>200</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>CREATE DATABASE BamazonDB;
+USE BamazonDB;
+-- I created the item id to be a varchar because the items would also have strings 
+CREATE TABLE IF NOT EXISTS products(
+item_id VARCHAR(100) NOT NULL PRIMARY KEY,
+product_name VARCHAR(100),
+department_name VARCHAR(100),
+price INTEGER(100) UNSIGNED NOT NULL,
+quantity INTEGER(100) UNSIGNED
+
+)</string>
+		<string>INSERT INTO actors
+(`name`, coolness_points, attitude )
+VALUES
+('seinfield', 70, 'awesome');
+INSERT INTO actors
+(`name`, coolness_points, attitude )
+VALUES
+('jason alexander', 20, 'wow');
+INSERT INTO actors
+(`name`, coolness_points, attitude )
+VALUES
+('micheal richards', 60, 'shesh')</string>
+		<string>INSERT INTO actors
+(`name`, coolneess_points, attitude )
+VALUES
+('seinfield', 70, 'awesome');
+INSERT INTO actors
+(`name`, coolneess_points, attitude )
+VALUES
+('jason alexander', 20, 'wow');
+INSERT INTO actors
+(`name`, coolneess_points, attitude )
+VALUES
+('micheal richards', 60, 'shesh')</string>
+		<string>INSERT INTO actors
+(`name`, coolneess_points, attitude )
+VALUES
+('seinfield', 70, 'awesome')</string>
+		<string>CREATE DATABASE IF NOT EXISTS seinfeildDB;
+USE seinfeildDB;
+CREATE TABLE IF NOT EXISTS actors 
+(
+id INTEGER(30) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+`name` VARCHAR(30),
+coolness_points INTEGER(100) NOT NULL,
+attitude VARCHAR(100)
+)</string>
+		<string>CREATE DATABASE IF NOT EXISTS seinfeildDB
+
+USE seinfeildDB</string>
+		<string>INSERT INTO reservation 
+(`name`, phone, email, id)
+VALUES
+('grace', 2222-2222, 'grace@email.me', 'abc' )</string>
+		<string>CREATE TABLE IF NOT EXISTS waiting
+(
+`name`VARCHAR(30) NOT NULL
+, phone INTEGER(30)
+, email VARCHAR(100)
+, id VARCHAR(30) NOT NULL,
+PRIMARY KEY (id) 
+)</string>
+		<string>CREATE TABLE IF NOT EXISTS reservation
+(
+`name`VARCHAR(30) NOT NULL
+, phone INTEGER(30)
+, email VARCHAR(100)
+, id VARCHAR(30) NOT NULL,
+PRIMARY KEY (id) 
+
+)</string>
+		<string>CREATE IF NOT EXISTS hotresDB</string>
+		<string>CREATE IF NOT EXIST hotresDB</string>
+		<string>CREATE TABLE IF NOT EXISTS top1000songs
+(id INTEGER(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+artist VARCHAR(30) NOT NULL,
+song_name VARCHAR(100) NOT NULL,
+`year` YEAR(4),
+raw_popularity_score FLOAT(10),
+us_popularity_score FLOAT(10),
+uk_popularity_score FLOAT(10),
+europe_popularity_score FLOAT(10),
+global_popularity_score FLOAT(10)
+
+)</string>
+		<string>CREATE TABLE IF NOT EXISTS topalbums
+(id INTEGER(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+artist VARCHAR(30) NOT NULL,
+album VARCHAR(100) NOT NULL,
+`year` YEAR(4),
+raw_popularity_score FLOAT(10),
+us_popularity_score FLOAT(10),
+uk_popularity_score FLOAT(10),
+europe_popularity_score FLOAT(10),
+global_popularity_score FLOAT(10)
+
+)</string>
+		<string>create topalbums
+(id INTEGER(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+artist VARCHAR(30) NOT NULL,
+album VARCHAR(100) NOT NULL,
+`year` YEAR(4),
+raw_popularity_score FLOAT(10),
+us_popularity_score FLOAT(10),
+uk_popularity_score FLOAT(10),
+europe_popularity_score FLOAT(10),
+global_popularity_score FLOAT(10)
+
+)</string>
+		<string>SELECT * FROM top_songs.topsongs.id=5</string>
+		<string>SELECT * FROM top_songs.topsongs.id 5</string>
+		<string>SELECT * FROM top_songs.topsongs</string>
+		<string>SELECT * FROM top_songs2_db.topsongs</string>
+		<string>CREATE TABLE topsongs
+(id INTEGER(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+artist VARCHAR(30) NOT NULL,
+song_name VARCHAR(100) NOT NULL,
+`year` YEAR(4),
+raw_popularity_score FLOAT(10),
+us_popularity_score FLOAT(10),
+uk_popularity_score FLOAT(10),
+europe_popularity_score FLOAT(10),
+global_popularity_score FLOAT(10)
+
+)</string>
+		<string>CREATE TABLE topsongs
+(id INTEGER(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+artist VARCHAR(30) NOT NULL,
+song_name VARCHAR(100) NOT NULL,
+`year` YEAR(4),
+raw_popularity_score FLOAT(10),
+us_popularity_score FLOAT(10),
+uk_popularity_score FLOAT(10),
+europe_popularity_score FLOAT(10),
+global_popularity_score FLOAT(10),
+
+
+)</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.7.17</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>

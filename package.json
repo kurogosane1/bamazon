@@ -1,0 +1,24 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "this is where the servers would interact with each other and communicate the users transactions",
+  "main": "bamazonCustomer.js",
+  "dependencies": {
+    "inquirer": "^3.0.1",
+    "mysql": "^2.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurogosane1/bamazon.git"
+  },
+  "author": "Syed Saad Khurshid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kurogosane1/bamazon/issues"
+  },
+  "homepage": "https://github.com/kurogosane1/bamazon#readme"
+}

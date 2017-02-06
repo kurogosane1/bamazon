@@ -16,23 +16,21 @@ connection.connect(function(err) {
   console.log("connected as id " + connection.threadId);
 });
 
-//this is where the function would begin when the customer starts the application//
+
 var start = function(){
     inquirer.prompt([
-        {   //the user is prompted to a welcome screen where they have to select to buy or do nothing//
+        {
             name: "toAnounce",
             type: 'rawlist',
-            message: 'Welcome to Bamazon. Would you like to buy something?',
             choices:['buy', 'nothing'],
                       
         }
     ]).then(function(answer){
         if (answer.toAnounce.toUpperCase() === "BUY")
-        {   //if the user wants to buy something, then the buying function would activate//
+        {
             buying();
         }
         else{
-            //otherwise if the user does not have an purticular need then the user shall be welcomed to this message and then directed back to the bgeining of the page//
             console.log("thank you for visiting Bamazon and we shall send you to the first page");
             start();
         }
@@ -40,9 +38,7 @@ var start = function(){
 
     
 };
-//The buying function the looks for all the items in inventory and display to the user but also allow the user to select by using the id number that the user would be asked to input and to buy//
-//if the user decides to purchase items, then the user will enter the item_id and after that then system would then search the inventory system to see if there is sufficient inventory to purchase//
-// if the inventory does not have enough to full fill the request, then the user shall be prompted to not enough inventory otherwise the users purchase would be accepted and the new inventory count in the database would be updated
+
 var buying =  function (){
     connection.query("SELECT * FROM products", function (err, res){
         console.log("this is line 43");
@@ -74,7 +70,6 @@ var buying =  function (){
             }
             else{
                 console.log("insuffucient quantity");
-                start();
             }
 
 
@@ -87,6 +82,4 @@ var buying =  function (){
 var purchase = function(id, remaining){
     connection.query("UPDATE products SET? WHERE?",{quantity : remaining},{item_id : id}, function(err, res){})
     start();
-}
-
-start();
+},
